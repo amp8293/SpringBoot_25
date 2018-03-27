@@ -12,6 +12,16 @@ public class HomeController {
         return "formtemplate";
     }
 
+    /**
+     * Adding dummy code just to make a change for the SongFeature branch
+     * Does the same thing as going to the "/loadform" URL
+     * @return
+     */
+    @RequestMapping("/song")
+    public String songFormPage() {
+        return "formtemplate";
+    }
+
     @RequestMapping("/processform")
     public String loadFormPage(@RequestParam("login") String login, Model model) {
         model.addAttribute("loginval",login);
